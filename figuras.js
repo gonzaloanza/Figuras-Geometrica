@@ -1,14 +1,19 @@
 //Codigo del cuadrado
 
 console.group("Cuadrados");
-const ladoCuadrado = 5;
-console.log("Los lados del cuadrado mide: " + ladoCuadrado + "cm");
+//const ladoCuadrado = 5;
+//console.log("Los lados del cuadrado mide: " + ladoCuadrado + "cm");
 
-const perimetroCuadra = ladoCuadrado * 4;
-console.log("El perimetro del cuadrado es: " + perimetroCuadra + "cm");
+function perimetroCuadra(lado){
+    return lado * 4;
+}  
 
-const areaCuadrada = ladoCuadrado * ladoCuadrado;
-console.log("El area del cuadrado es: " + areaCuadrada + "cm^2");
+//console.log("El perimetro del cuadrado es: " + perimetroCuadra + "cm");
+
+function areaCuadrada(lado){
+    return lado * lado;
+} 
+//console.log("El area del cuadrado es: " + areaCuadrada + "cm^2");
 
 console.groupEnd();
 
@@ -27,11 +32,15 @@ console.log(
 const alturaTriangulo = 5.5;
 console.log("La actulra del triangualo es de: "+ alturaTriangulo + "cm");
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
-console.log("El perimetro del triangulo es: "+perimetroTriangulo + "cm");
+function perimetroTriangulo(lado1, lado2, base){
+    return lado1 + lado2 + base;
+} 
+//console.log("El perimetro del triangulo es: "+perimetroTriangulo + "cm");
 
-const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-console.log("El area del triangulo es: "+ areaTriangulo + "cm^2");
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+} 
+//console.log("El area del triangulo es: "+ areaTriangulo + "cm^2");
 
 console.groupEnd();
 
