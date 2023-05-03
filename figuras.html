@@ -11,14 +11,7 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a id="colorCuadrado" href="#cuadrado">Cuadrado</a></li>
-                <li><a id="colorTriangulo" href="#triangulo">Triangulo</a></li>
-                <li><a id="colorCirculo" href="#circulo">Circulo</a></li>
-                <li><a id="colorTrianguloIso" href="#trianguloIso">Triangulo isosceles</a></li>
-            </ul>
-        </nav>
+
         <div class="entrada">
             <h1>Figuras Geometrica</h1>
         </div>
@@ -29,9 +22,7 @@
         <img src="img/Cuadrado.png" alt="Cuadrado" width="300px">
 
         <form>
-            <p>
-                <label for="inputCuadrado">Tamaño del los lados del Cuadrado</label>
-            </p>
+ 
             <p> <input id="inputCuadrado" type="number"></p>
             <p>
                 <button class="botton1" type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
@@ -46,9 +37,7 @@
         <h2>Triangulo</h2>
         <img src="img/Triangulo.png" alt="Triangulo" width="300px">
         <form>
-            <p>
-                <label for="inputTriangulo">Escribe cuanto mide cada lado de tu triangulo</label>
-            </p>
+  
             <p> 
                 <label for="inputTrianguloLado1">Lado 1:</label>
                 <input id="inputTrianguloLado1" type="number">
@@ -69,8 +58,7 @@
                 <button class="botton1" type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
                 <button class="botton2" type="button" onclick="CalcularAreaTriangulo()">Calcular Area</button>
             </p>
-            <h3>Resultado</h3>
-            <p class="resultadoTriangulo" id="resultadoTriangulo"></p>
+            <p class="resultadoTriangulo" id="resultadoTriangulo">Resultado</p>
 
         </form>
     </section>
@@ -79,16 +67,14 @@
         <h2>Circulo</h2>
         <img src="img/Circulo.png" alt="Circulo" width="300px">
         <form>
-            <p>
-                <label for="inputCirculo">Escribe cuanto mide cada lado de tu Circulo</label>
-            </p>
+  
             <p> <input id="inputCirculo" type="number"></p>
             <p>
                 <button class="botton1" type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
                 <button class="botton2" type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
             </p>
-            <h3>Resultado</h3>
-            <p class="resultadoCirculo" id="resultadoCirculo"></p>
+
+            <p class="resultadoCirculo" id="resultadoCirculo">Resultado</p>
 
         </form>
     </section>
@@ -96,11 +82,9 @@
     
     <section id="trianguloIso">
         <h2>Triangulo isosceles</h2>
-        <img src="img/Triangulo.png" alt="Triangulo isosceles" width="300px">
+        <img src="img/TrianguloIso.png" alt="Triangulo isosceles" width="300px">
         <form>
-            <p>
-                <label for="inputTriangulo">Escribe cuanto mide cada lado de tu triangulo isosceles</label>
-            </p>
+
             <p> 
                 <label for="inputLado1">Lado 1:</label>
                 <input id="inputLado1" type="number">
@@ -115,10 +99,10 @@
             </p>
 
             <p>
-                <button class="botton2" type="button" onclick="CalcularAreaTrianguloIso()">Calcular Area</button>
+                <button class="botton2" type="button" onclick="CalcularAreaTrianguloIso()">Calcular Altura</button>
             </p>
-            <h3>Resultado</h3>
-            <p class="resultadoTrianguloIso" id="resultadoTrianguloIso"></p>
+
+            <p class="resultadoTrianguloIso" id="resultadoTrianguloIso">Resultado</p>
 
         </form>
     </section>
