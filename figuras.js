@@ -117,3 +117,30 @@ function calcularAreaCirculo(){
     document.getElementById("resultadoCirculo").innerHTML = area;
 }
 
+// Interactuamos con el HTML Triangulo Isoceles
+
+function CalcularAreaTrianguloIso(){
+    const input1 = document.getElementById("inputLado1");
+    const lado1 = parseInt(input1.value);
+
+    const input2 = document.getElementById("inputLado2");
+    const lado2 = parseInt(input2.value);
+
+    const input3 = document.getElementById("inputBase");
+    const base = parseInt(input3.value);
+
+    const altura2 = altura(lado1,lado2,base);
+    document.getElementById("resultadoTrianguloIso").innerHTML = resultado;
+
+    function altura(lado1, lado2, base){
+        if(lado1 === lado2 && lado1 != base){
+            const altura = Math.sqrt(lado1**2 - base**2/ 4)
+            resultado = "Es un isoceles y su altura es: "+altura;
+            console.log(altura)
+        }
+        else{
+            resultado = "No es isoceles";
+        }
+    }
+} 
+

@@ -69,7 +69,7 @@ section{
 
 
 section h2{
-    margin-top: 15px;
+    margin-top: 115px;
     margin-bottom: 15px;
 }
 
@@ -106,6 +106,17 @@ input[type="number"]{
     border-radius: 5px;
 }
 
+.resultadoTrianguloIso{
+    border: 1px solid rgb(87, 86, 86);
+    width: 300px;
+    height: 80px;
+    line-height: 40px;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
 h3{
     margin-top: 20px;
 }
@@ -135,5 +146,14 @@ h3{
 
 #colorCirculo:hover{
     background-color: #fdfd1f;
+    color: black;
+}
+
+#colorTrianguloIso{
+    background-color: #3498f7;
+}
+
+#colorTrianguloIso:hover{
+    background-color: #45a5dd;
     color: black;
 }

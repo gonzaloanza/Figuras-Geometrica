@@ -13,9 +13,10 @@
     <header>
         <nav>
             <ul>
-                <li><a id="colorCuadrado" href="#cuadrado">Calcular cuadrado</a></li>
-                <li><a id="colorTriangulo" href="#triangulo">Calcular triangulo</a></li>
-                <li><a id="colorCirculo" href="#circulo">Calcular circulo</a></li>
+                <li><a id="colorCuadrado" href="#cuadrado">Cuadrado</a></li>
+                <li><a id="colorTriangulo" href="#triangulo">Triangulo</a></li>
+                <li><a id="colorCirculo" href="#circulo">Circulo</a></li>
+                <li><a id="colorTrianguloIso" href="#trianguloIso">Triangulo isosceles</a></li>
             </ul>
         </nav>
         <div class="entrada">
@@ -24,6 +25,7 @@
     </header>
 
     <section id="cuadrado">
+        <h2>Cuadrado</h2>
         <img src="img/Cuadrado.png" alt="Cuadrado" width="300px">
 
         <form>
@@ -41,6 +43,7 @@
         </form>
     </section>
     <section id="triangulo">
+        <h2>Triangulo</h2>
         <img src="img/Triangulo.png" alt="Triangulo" width="300px">
         <form>
             <p>
@@ -73,6 +76,7 @@
     </section>
 
     <section id="circulo">
+        <h2>Circulo</h2>
         <img src="img/Circulo.png" alt="Circulo" width="300px">
         <form>
             <p>
@@ -85,6 +89,36 @@
             </p>
             <h3>Resultado</h3>
             <p class="resultadoCirculo" id="resultadoCirculo"></p>
+
+        </form>
+    </section>
+
+    
+    <section id="trianguloIso">
+        <h2>Triangulo isosceles</h2>
+        <img src="img/Triangulo.png" alt="Triangulo isosceles" width="300px">
+        <form>
+            <p>
+                <label for="inputTriangulo">Escribe cuanto mide cada lado de tu triangulo isosceles</label>
+            </p>
+            <p> 
+                <label for="inputLado1">Lado 1:</label>
+                <input id="inputLado1" type="number">
+            </p>
+            <p> 
+                <label for="inputLado2">Lado 2:</label>
+                <input id="inputLado2" type="number">
+            </p>
+            <p> 
+                <label for="inputBase">Base:</label>
+                <input id="inputBase" type="number">
+            </p>
+
+            <p>
+                <button class="botton2" type="button" onclick="CalcularAreaTrianguloIso()">Calcular Area</button>
+            </p>
+            <h3>Resultado</h3>
+            <p class="resultadoTrianguloIso" id="resultadoTrianguloIso"></p>
 
         </form>
     </section>
