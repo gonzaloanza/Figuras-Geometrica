@@ -6,3 +6,4 @@
 - Segundo paso: implementar la formulas en Javascript
 - Tercer paso: crear funciones
 - Cuarto Paso: integrar JS con HTML
+- CSS -> FLOAT
