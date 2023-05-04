@@ -1,4 +1,4 @@
-# practica-javascript-1
+# Figuras Geometrica
 
 ## Taller #1: Figuras geometricas
 
